@@ -100,7 +100,7 @@ function App() {
     };
 
     render();
-  }, []);
+  }, [colorArray, mouse.x, mouse.y]);
 
   return (
     <div className="App">
