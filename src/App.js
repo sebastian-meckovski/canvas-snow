@@ -1,20 +1,19 @@
 import { useEffect, useRef } from "react";
 import "./App.css";
 
+var mouse = {
+  x: undefined,
+  y: undefined,
+};
+
+window.addEventListener("mousemove", (e) => {
+  mouse.x = e.x;
+  mouse.y = e.y;
+});
+
+var colorArray = ["#4a4e4d", "#0e9aa7", "#3da4ab", "#f6cd61", "#fe8a71"];
 
 function App() {
-  var mouse = {
-    x: undefined,
-    y: undefined,
-  };
-  
-  window.addEventListener("mousemove", (e) => {
-    mouse.x = e.x;
-    mouse.y = e.y;
-  });
-  
-  var colorArray = ["#4a4e4d", "#0e9aa7", "#3da4ab", "#f6cd61", "#fe8a71"];
-  
   const canvasRef = useRef(null);
 
   useEffect(() => {
