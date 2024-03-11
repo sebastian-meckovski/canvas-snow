@@ -24,9 +24,6 @@
   color: white;
 }
 
-canvas {
-  border: 1px solid black;
-}
 body {
   display: flex;
   margin: 0;
